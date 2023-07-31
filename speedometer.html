@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Ride</title>
+</head>
+<body>
+  <div class="max-w-xl p-2 flex flex-col justify-between bg-zinc-800 h-screen">
+    <nav class="max-w-xl flex justify-end mb-2">
+      <a class="text-red-500 font-bold p-2 rounded border-2 border-slate-950" href="./index.html">X</a>
+    </nav>
+    <div class="flex flex-col items-center justify-center bg-black text-red-300 h-screen mb-3 rounded">
+      <span class="font-bold text-9xl" id="speed">0</span>
+      <span class="font-bold text-3xl">km/h</span>
+    </div>
+    <button class="text-3xl p-3 bg-blue-200 rounded mb-3" id="start">Start</button>
+    <button class="text-3xl p-3 bg-red-500 rounded mb-3 hidden" id="stop">Stop</button>
+  </div>
+
+  <script src="./speedimeter.js"></script>
+</body>
+</html>
